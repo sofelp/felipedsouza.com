@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --corprincipal:  #000000;
+    --corsecundaria:  #ffffff;
+    --corauxiliarum : #e6e6e6 ;
+    --corauxiliardois :  #031530;
+    --corauxiliartres :  #f4b65b;
+    --corauxiliarquatro: #fcf6f0;
+}
+
+header {
+    background-color: var(--corprincipal);
+    color: white;
+    padding: 20px;
+    
+}
+
+header > nav > a {
+    color: var(--corsecundaria);
+    text-decoration: none;
+    
+    
+}
+
+header > nav > h1 {
+    display: inline-block;
+}
+
+body {
+    background-color: var(--corauxiliarum);
+}
+
+main {
+    display: flex;
+    margin: 20px;
+    background-color: #f4b65b;
+}
+
+#conteinshow {
+    margin: 20px;
+    display: flex;
+    background-color: #031530;
+    width: 90vw;
+    height: 300px;
+    border-radius: 20px;
+}
+#show {
+    padding: 30px;
+    flex-flow: row nowrap;
+    flex-basis: 600px;
+    flex: 0 0 auto;
+}
+
+
+#show > h2 {
+    color: var(--corsecundaria);
+}
