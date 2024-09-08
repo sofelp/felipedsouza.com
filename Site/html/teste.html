@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+        #pai {
+            display: flex;
+            background-color: bisque;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        #filho {
+            flex: 1 0 400px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+        .anuncio {
+            min-width: 400px;
+            max-width: 800px;
+            margin: 20px;
+            min-height: 400px;
+            max-height: 400px;
+            background-color: blue;
+            border-radius: 20px;
+        }
+        .projeto {
+            min-width: 400px;
+            max-width: 400px;
+            margin: 20px;
+            min-height: 400px;
+            max-height: 400px;
+            background-color: rgb(145, 2, 2);
+            border-radius: 20px;
+            text-align: center;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="pai">
+        </div>
+        <div id="filho">
+            <div class="anuncio">a</div>
+            <div class="projeto">b</div>
+            <div class="projeto">c</div>
+            <div class="projeto">d</div>
+            <div class="projeto">e</div>
+        </div>
+    </main>
+</body>
+</html>
