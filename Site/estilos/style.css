@@ -30,7 +30,13 @@ header {
     padding: 20px;
     margin-top: 10px;
 }
+.setadireitamaterial-symbols-outlined {
+    display: none;
+}
 
+.setadireita:hover ~ .setacima {
+    display: block;
+}
 
 header > nav {
     display: flex;
@@ -43,6 +49,10 @@ header > nav > a {
     text-decoration: none;
     font-family: var(--fontauxiliar);
     margin: 20px;
+}
+
+a:hover {
+   border-bottom: 2px solid var(--corsecundaria);
 }
 
 header > nav > div {
