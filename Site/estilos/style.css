@@ -15,6 +15,10 @@
     --corauxiliarquatro: #fcf6f0;
 }
 
+.paiheader {
+    display: flex;
+    justify-content: end;
+}
 header {
     background-color: var(--corprincipal);
     color: white;
@@ -34,38 +38,102 @@ header > nav > h1 {
 }
 
 body {
-    background-color: aqua;
+    background-color: var(--corprincipal);
 }
-#pai {
+.paianuncio {
     display: flex;
-    background-color: bisque;
-    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-}
-#filho {
-    flex: 1 0 400px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
 }
 .anuncio {
-    min-width: 400px;
-    max-width: 800px;
     margin: 20px;
-    min-height: 400px;
-    max-height: 400px;
-    background-color: blue;
+    margin-top: 50px;
+    flex: 1 0 auto;
+    min-width: 400px;
+    max-width: 600px;
+    height: 400px;
     border-radius: 20px;
+    background-color: blueviolet;
 }
-.projeto {
+
+@media screen and (min-width: 644px) { /*tablet anuncio*/
+    .anuncio {
+    flex: 1 0 auto;
     min-width: 400px;
-    max-width: 400px;
-    margin: 20px;
-    min-height: 400px;
-    max-height: 400px;
-    background-color: rgb(145, 2, 2);
+    max-width: 95vw;
+    min-height: 500px;
+    max-height: 800px;
     border-radius: 20px;
-    text-align: center; 
+    background-color: blueviolet;
+    }
+}
+
+@media screen and (min-width: 870px) { /*tablet anuncio*/
+    .anuncio {
+    flex: 1 0 auto;
+    min-width: 400px;
+    max-width: 90vw;
+    height: 600px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    }
+}
+
+@media screen and (min-width: 970px) { /*tablet anuncio*/
+    .anuncio {
+    flex: 1 0 auto;
+    min-width: 400px;
+    max-width: 90vw;
+    height: 600px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    }
+}
+
+@media screen and (min-width: 1080px) { /*PC anuncio*/
+    .anuncio {
+    flex: 1 0 auto;
+    width: 800px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    }
+}
+
+ /*====Media Query Projeto=====*/
+
+
+@media screen and (min-width: 600px){ /*tablet projeto*/
+    .projeto {
+    width: 500px;
+    height: 500px;
+    background-color: brown;
+    border-radius: 20px;
+    margin: 20px;
+} 
+
+@media screen and (min-width: 850px){ /*tablet projeto*/
+    .projeto {
+    width: 400px;
+    height: 400px;
+    background-color: brown;
+    border-radius: 20px;
+    margin: 20px;
+} 
+ }
+
+
+}
+.paiprojeto {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+
+.projeto {
+    min-width: 430px;
+    min-height: 430px;
+    background-color: brown;
+    border-radius: 20px;
+    margin: 20px;
 }
