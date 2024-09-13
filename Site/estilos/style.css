@@ -63,7 +63,7 @@ header > nav > div {
 
 header > nav > img {
     margin-left: 5vw;
-    width: 15%;
+    width: 25%;
     height: auto;
     margin-right: auto;
 }
@@ -96,6 +96,7 @@ body {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    padding-bottom: 50px;
 }
 
 .projeto {
@@ -107,10 +108,32 @@ body {
 }
 
 .paisinopse {
+    padding-top: 30px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
     background-color: var(--corsecundaria);
+}
+
+#fotominha {
+    background-size: cover;
+    background-image: url(../imagens/sinopse/eupretoebranco-pequeno.png);
+    width: 420px;
+    height: 420px;
+
+}
+
+#mesadigi {
+    background-size: cover;
+    background-image: url(../imagens/sinopse/caneta-pequena.png);
+    width: 420px;
+    height: 420px;
+}
+
+#precisaprojeto {
+    background-color: var(--corprincipal);
+    color: var(--corsecundaria);
 }
 
 .filhosinopse {
@@ -127,6 +150,28 @@ body {
     line-height: 28px;
 }
 
+#falesinopse {
+    color: var(--corsecundaria);
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    border: 2px solid var(--corsecundaria);
+    transition: background-color 0.4s ease;
+}
+
+#falesinopse:hover {
+    
+    color: var(--corprincipal);
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background-color: var(--corsecundaria);
+}
+
 p {
     margin-top: 10px;
     line-height: normal;
@@ -138,17 +183,25 @@ h2 {
 }
 .pairodape {
     display: flex;
-    justify-content: space-between;
-    background-color: var(--corauxiliardois);
+    flex-flow: row nowrap;
+    background-color: var(--corprincipal);
+    padding: 20px;
 }
 .filhorodape {
-    flex: auto;
+
 }
 
 
 .filhorodape a {
+    margin: 20px;
+    margin-left: auto;
     color: var(--corsecundaria);
     font-family: var(--fontauxiliar);
+    text-decoration: none;
+    
+}
+
+.filhorodape img{
 }
 
 .filhorodape p{
@@ -156,6 +209,17 @@ h2 {
     font-family: var(--fontauxiliar);
 }
 
-.filhorodape li{
+.filhorodape ul{
+    list-style: none;
     
 }
+
+.iconerodape {
+    width: 32px;
+    height: 32px;
+}
+
+.iconerodape {
+text-decoration: none;
+}
+
