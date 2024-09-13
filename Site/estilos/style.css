@@ -134,6 +134,9 @@ body {
 #precisaprojeto {
     background-color: var(--corprincipal);
     color: var(--corsecundaria);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
 }
 
 .filhosinopse {
@@ -187,10 +190,6 @@ h2 {
     background-color: var(--corprincipal);
     padding: 20px;
 }
-.filhorodape {
-
-}
-
 
 .filhorodape a {
     margin: 20px;
@@ -199,9 +198,6 @@ h2 {
     font-family: var(--fontauxiliar);
     text-decoration: none;
     
-}
-
-.filhorodape img{
 }
 
 .filhorodape p{
