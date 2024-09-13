@@ -30,11 +30,16 @@ header {
     padding: 20px;
     margin-top: 10px;
 }
-.setadireitamaterial-symbols-outlined {
+
+#setapracima {
     display: none;
 }
 
-.setadireita:hover ~ .setacima {
+#setapradireita:hover {
+    display: none;
+}
+
+#setapradireita:hover + #setapracima {
     display: block;
 }
 
@@ -185,37 +190,49 @@ h2 {
     font-size: 1.7em;
 }
 .pairodape {
-    display: flex;
-    flex-flow: row nowrap;
     background-color: var(--corprincipal);
-    padding: 20px;
+    padding: 20px 0;
+}
+
+.filhorodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.textodiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.redesdiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .filhorodape a {
-    margin: 20px;
-    margin-left: auto;
     color: var(--corsecundaria);
     font-family: var(--fontauxiliar);
     text-decoration: none;
-    
 }
 
-.filhorodape p{
+.filhorodape p {
     color: var(--corsecundaria);
     font-family: var(--fontauxiliar);
-}
-
-.filhorodape ul{
-    list-style: none;
-    
 }
 
 .iconerodape {
     width: 32px;
     height: 32px;
+    margin-left: 15px;
 }
 
-.iconerodape {
-text-decoration: none;
+.logofooter #ilogofooter{
+    width: 90px;
+    height: auto;
 }
-
