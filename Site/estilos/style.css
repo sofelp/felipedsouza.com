@@ -31,18 +31,6 @@ header {
     margin-top: 10px;
 }
 
-#setapracima {
-    display: none;
-}
-
-#setapradireita:hover {
-    display: none;
-}
-
-#setapradireita:hover + #setapracima {
-    display: block;
-}
-
 header > nav {
     display: flex;
     align-items: center;
