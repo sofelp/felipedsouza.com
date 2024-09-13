@@ -91,51 +91,6 @@ body {
     background-color: blueviolet;
 }
 
-@media screen and (min-width: 644px) { /*tablet anuncio*/
-    .anuncio {
-    flex: 1 0 auto;
-    min-width: 400px;
-    max-width: 90vw;
-    min-height: 500px;
-    max-height: 800px;
-    border-radius: 20px;
-    background-color: blueviolet;
-    }
-}
-
-@media screen and (min-width: 870px) { /*tablet anuncio*/
-    .anuncio {
-    flex: 1 0 auto;
-    min-width: 400px;
-    max-width: 90vw;
-    height: 600px;
-    border-radius: 20px;
-    background-color: blueviolet;
-    }
-}
-
-@media screen and (min-width: 970px) { /*pc anuncio*/
-    .anuncio {
-    flex: 1 0 auto;
-    width: 80vw;
-    height: 600px;
-    border-radius: 20px;
-    background-color: blueviolet;
-    }
-}
-
-@media screen and (min-width: 1080px) { /*PC anuncio*/
-    .anuncio {
-    flex: 0 0 auto;
-    width: 80vw;
-    height: 600px;
-    border-radius: 20px;
-    background-color: blueviolet;
-    }
-}
-
- /*====Media Query Projeto=====*/
-
 
 .paiprojeto {
     display: flex;
@@ -151,85 +106,56 @@ body {
     margin: 20px;
 }
 
-@media screen and (min-width: 644px){ /*tablet projeto*/
-    .projeto {
-    width: 550px;
-    height: 550px;
-    background-color: brown;
+.paisinopse {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: var(--corsecundaria);
+}
+
+.filhosinopse {
+    flex: 0 0 auto;
+    padding: 20px;
+    padding-right: 24px;
+    margin: 20px;
+    margin-bottom: 0px;
+    width: 420px;
+    max-height: 420px;
+    background-color: var(--corauxiliarum);
     border-radius: 20px;
-    margin: 9px;
-} 
+    font-family: var(--fontauxiliar);
+    line-height: 28px;
+}
 
-@media screen and (min-width: 770px){ /*tablet projeto*/
-    .projeto {
-        width: 230px;
-        height: 230px;
-        background-color: brown;
-        border-radius: 20px;
-        margin: 9px;
-    }
+p {
+    margin-top: 10px;
+    line-height: normal;
+}
 
-    .paiprojeto {
-        margin-left: 1vw; /* Aplica margem externa ao container */
-        margin-right: 1vw;
-    }
+h2 {
+    font-weight: 700;
+    font-size: 1.7em;
+}
+.pairodape {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--corauxiliardois);
+}
+.filhorodape {
+    flex: auto;
 }
 
 
- @media screen and (min-width: 940px){ /*pc projeto*/
-    .projeto {
-    width: 270px;
-    height: 270px;
-    background-color: brown;
-    border-radius: 20px;
-    margin: 9px;
-} 
- }
+.filhorodape a {
+    color: var(--corsecundaria);
+    font-family: var(--fontauxiliar);
+}
 
- @media screen and (min-width: 1166px){ /*pc projeto*/
-    .projeto {
-    width: 300px;
-    height: 300px;
-    background-color: brown;
-    border-radius: 20px;
-    margin: 9px;
-} 
- }
+.filhorodape p{
+    color: var(--corsecundaria);
+    font-family: var(--fontauxiliar);
+}
 
- @media screen and (min-width: 1285px){ /*pc projeto*/
-    .projeto {
-    width: 320px;
-    height: 320px;
-    background-color: brown;
-    border-radius: 20px;
-    margin: 9px;
-} 
- }
-
- @media screen and (min-width: 1364px){ /*pc projeto*/
-    .projeto {
-    width: 350px;
-    height: 350px;
-    background-color: brown;
-    border-radius: 20px;
-    margin: 9px;
-} 
- }
-
- @media screen and (min-width: 1485px){ /* Após 1485px, garantir 3 colunas fixas */
-    .projeto {
-        width: calc(33.33% - 18px); /* 3 colunas com margens */
-        height: 380px;
-        background-color: brown;
-        border-radius: 20px;
-        margin: 9px;
-        flex: 0 0 auto; /* Impede que os itens estiquem ou encolham */
-    }
-
-    .paiprojeto {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0 10vw; /* Adiciona uma margem interna nas laterais da tela */
-    }
+.filhorodape li{
+    
 }
