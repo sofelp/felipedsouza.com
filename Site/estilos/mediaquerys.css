@@ -67,6 +67,10 @@
         margin-left: 1vw; /* Aplica margem externa ao container */
         margin-right: 1vw;
     }
+
+    .filhosinopse p {
+        font-size: 1.2em;
+    }
 }
 
 
@@ -125,6 +129,17 @@
         justify-content: center;
         flex-wrap: wrap;
         padding: 0 10vw; /* Adiciona uma margem interna nas laterais da tela */
+        margin-bottom: 60px;
+    }
+
+    .filhosinopse {
+        width: 550px;
+        height: 500px;
+        font-size: 1.3em;
+        line-height: 45px;
+    }
+     .filhosinopse p {
+        font-size: 1.2em;
     }
 }
 

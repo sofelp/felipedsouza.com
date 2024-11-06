@@ -104,6 +104,7 @@ body {
 .paisinopse {
     padding-top: 30px;
     padding-bottom: 50px;
+    paddingpx;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -137,8 +138,8 @@ body {
     flex: 0 0 auto;
     padding: 20px;
     padding-right: 24px;
-    margin: 20px;
-    margin-bottom: 0px;
+    margin: 10px;
+    margin-bottom: 10px;
     width: 420px;
     max-height: 420px;
     background-color: var(--corauxiliarum);
