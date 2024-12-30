@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 644px) { /*tablet anuncio*/
+    .anuncio {
+    flex: 1 0 auto;
+    min-width: 400px;
+    max-width: 90vw;
+    min-height: 500px;
+    max-height: 800px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    }
+}
+
+@media screen and (min-width: 870px) { /*tablet anuncio*/
+    .anuncio {
+    flex: 1 0 auto;
+    min-width: 400px;
+    max-width: 90vw;
+    height: 600px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    }
+}
+
+@media screen and (min-width: 970px) { /*pc anuncio*/
+    .anuncio {
+    flex: 1 0 auto;
+    width: 90vw;
+    height: 600px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    }
+}
+
+@media screen and (min-width: 1080px) { /*PC anuncio*/
+    .anuncio {
+    flex: 0 0 auto;
+    width: 60vw;
+    height: 600px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    }
+}
+
+/*====Media Query Projeto=====*/

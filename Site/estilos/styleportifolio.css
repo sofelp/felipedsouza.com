@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --corprincipal:  #000000;
+    --corsecundaria:  #ffffff;
+    --corauxiliarum : #e6e6e6 ;
+    --corauxiliardois :  #031530;
+    --corauxiliartres :  #f4b65b;
+    --corauxiliarquatro: #fcf6f0;
+    --fontauxiliar: "Poppins", sans-serif;
+}
+
+/*portifolio*/
+
+#descricaoprojeto {
+    color: var(--corsecundaria);
+    font-family: var(--fontauxiliar);
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+#tituloprojeto {
+    text-align: center;
+    font-family: var(--fontauxiliar);
+    color: var(--corsecundaria);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    font-size: 1.9em;
+}
+
+/*portifolio*/
+
+.paiheader {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    align-items: center; /* Alinha verticalmente */
+}
+.filhoheader {
+    justify-content: end;
+}
+header {
+    background-color: var(--corprincipal);
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header > nav > a {
+    color: var(--corsecundaria);
+    text-decoration: none;
+    font-family: var(--fontauxiliar);
+    margin: 20px;
+}
+
+a:hover {
+   border-bottom: 2px solid var(--corsecundaria);
+}
+
+header > nav > div {
+    margin-left: auto; /* Garante que os links fiquem à direita */
+    display: flex;
+    align-items: center;
+}
+
+header > nav > img {
+    margin-left: 5vw;
+    width: 25%;
+    height: auto;
+    max-width: 160px;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+header > nav > h1 {
+    display: inline-block;
+}
+
+body {
+    background-color: var(--corprincipal);
+}
+.paianuncio {
+    display: flex;
+    justify-content: center;
+}
+.anuncio {
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex: 1 0 auto;
+    min-width: 400px;
+    max-width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: blueviolet;
+}
+
+
+.paiprojeto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre as divs */
+    width: 100%; /* Opcional: Ajusta ao tamanho do body */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.projeto {
+    height: 600px;
+    width: 60vw;
+    background-color: #4caf50;
+    border-radius: 20px;
+    
+}
+
+.paisinopse {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    paddingpx;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: var(--corsecundaria);
+}
+
+#fotominha {
+    background-size: cover;
+    background-image: url(../imagens/sinopse/eupretoebranco-pequeno.png);
+    width: 420px;
+    height: 420px;
+
+}
+
+#mesadigi {
+    background-size: cover;
+    background-image: url(../imagens/sinopse/caneta-pequena.png);
+    width: 420px;
+    height: 420px;
+}
+
+#precisaprojeto {
+    background-color: var(--corprincipal);
+    color: var(--corsecundaria);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+}
+
+.filhosinopse {
+    flex: 0 0 auto;
+    padding: 20px;
+    padding-right: 24px;
+    margin: 10px;
+    margin-bottom: 10px;
+    width: 420px;
+    max-height: 420px;
+    background-color: var(--corauxiliarum);
+    border-radius: 20px;
+    font-family: var(--fontauxiliar);
+    line-height: 28px;
+}
+
+#falesinopse {
+    color: var(--corsecundaria);
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    border: 2px solid var(--corsecundaria);
+    transition: background-color 0.4s ease;
+}
+
+#falesinopse:hover {
+    
+    color: var(--corprincipal);
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background-color: var(--corsecundaria);
+}
+
+p {
+    margin-top: 10px;
+    line-height: normal;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.7em;
+}
+.pairodape {
+    background-color: var(--corprincipal);
+    padding: 20px 0;
+}
+
+.filhorodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.textodiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.redesdiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.filhorodape a {
+    color: var(--corsecundaria);
+    font-family: var(--fontauxiliar);
+    text-decoration: none;
+}
+
+.filhorodape p {
+    color: var(--corsecundaria);
+    font-family: var(--fontauxiliar);
+}
+
+.iconerodape {
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+}
+
+.logofooter #ilogofooter{
+    width: 90px;
+    height: auto;
+}
