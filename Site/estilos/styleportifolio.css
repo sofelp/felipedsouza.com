@@ -21,10 +21,10 @@
 #descricaoprojeto {
     color: var(--corsecundaria);
     font-family: var(--fontauxiliar);
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 20px;
+    flex: 1 0 auto;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 #tituloprojeto {
@@ -118,6 +118,7 @@ body {
     align-items: center; /* Centraliza horizontalmente */
     margin-top: 60px;
     margin-bottom: 60px;
+    flex-flow: 0 0 auto;
 }
 
 .projeto {
