@@ -5,6 +5,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
+  
+  html, body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
 
 :root {
     --corprincipal:  #000000;
@@ -50,7 +56,6 @@
 header {
     background-color: var(--corprincipal);
     color: white;
-    padding: 20px;
     margin-top: 10px;
 }
 
@@ -65,6 +70,7 @@ header > nav > a {
     text-decoration: none;
     font-family: var(--fontauxiliar);
     margin: 20px;
+    margin-right: 0px;
 }
 
 a:hover {
@@ -79,7 +85,7 @@ header > nav > div {
 
 header > nav > img {
     margin-left: 5vw;
-    width: 25%;
+    width: 20%;
     height: auto;
     max-width: 160px;
     margin-right: auto;
@@ -93,83 +99,88 @@ body {
     background-color: var(--corprincipal);
 }
 .paianuncio {
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centraliza os itens no eixo principal (horizontal) */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    background-color: var(--corprincipal);
 }
 .anuncio {
-    margin: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    flex: 1 0 auto;
-    min-width: 400px;
-    max-width: 600px;
-    height: 400px;
+    flex: 0 0 auto;
+    margin: 10px;
+    width: 350px;
+    height: 350px;
+    background-color: var(--corauxiliarum);
     border-radius: 20px;
+    font-family: var(--fontauxiliar);
     background-color: blueviolet;
 }
 
 
 .paiprojeto {
+    padding-bottom: 20px;
+    width: 100vw;
     display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    padding-bottom: 50px;
+    justify-content: center; /* Centraliza os itens no eixo principal (horizontal) */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    background-color: var(--corprincipal);
 }
 
 .projeto {
-    width: 420px;
-    height: 420px;
-    background-color: brown;
+    flex: 0 0 auto;
+    padding: 20px;
+    margin: 10px;
+    width: 350px;
+    height: 350px;
+    background-color: var(--corauxiliarum);
     border-radius: 20px;
-    margin: 20px;
+    font-family: var(--fontauxiliar);
+    line-height: 28px;
 }
+
+/* SINOPSE */
 
 .paisinopse {
     padding-top: 30px;
-    padding-bottom: 50px;
-    paddingpx;
+    padding-bottom: 30px;
+    width: 100vw;
     display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+    justify-content: center; /* Centraliza os itens no eixo principal (horizontal) */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
     background-color: var(--corsecundaria);
+  }
+
+.filhosinopse {
+
+flex: 0 0 auto;
+padding: 20px;
+padding-right: 24px;
+margin: 10px;
+width: 350px;
+height: 350px;
+background-color: var(--corauxiliarum);
+border-radius: 20px;
+font-family: var(--fontauxiliar);
+line-height: 28px;
+
 }
 
 #fotominha {
     background-size: cover;
     background-image: url(../imagens/sinopse/minhafoto.jpeg);
-    width: 420px;
-    height: 420px;
 
 }
 
 #mesadigi {
     background-size: cover;
     background-image: url(../imagens/sinopse/caneta-pequena.png);
-    width: 420px;
-    height: 420px;
 }
 
 #precisaprojeto {
     background-color: var(--corprincipal);
     color: var(--corsecundaria);
-    padding-top: 30px;
-    padding-bottom: 40px;
-    padding-left: 30px;
 }
 
-.filhosinopse {
-    flex: 0 0 auto;
-    padding: 20px;
-    padding-right: 24px;
-    margin: 10px;
-    margin-bottom: 10px;
-    width: 420px;
-    max-height: 420px;
-    background-color: var(--corauxiliarum);
-    border-radius: 20px;
-    font-family: var(--fontauxiliar);
-    line-height: 28px;
-}
 
 #falesinopse {
     color: var(--corsecundaria);
@@ -202,6 +213,9 @@ h2 {
     font-weight: 700;
     font-size: 1.7em;
 }
+
+/*RODAPE*/
+
 .pairodape {
     background-color: var(--corprincipal);
     padding: 20px 0;
