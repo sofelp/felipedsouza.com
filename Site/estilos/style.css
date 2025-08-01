@@ -16,10 +16,9 @@
     --corprincipal:  #000000;
     --corsecundaria:  #ffffff;
     --corauxiliarum : #e6e6e6 ;
-    --corauxiliardois :  #031530;
-    --corauxiliartres :  #f4b65b;
-    --corauxiliarquatro: #fcf6f0;
-    --fontauxiliar: "Poppins", sans-serif;
+    --corauxiliardois :  #e10613;
+    --corauxiliartres :  #1d1d1d;
+    --fontauxiliar: "manrope", sans-serif;
 }
 
 /*portifolio*/
@@ -63,7 +62,7 @@ header > nav {
     display: flex;
     align-items: center;
     width: 100%;
-    margin-right: 35px;
+    margin-right: 10vw;
 }
 
 header > nav > a {
@@ -71,7 +70,18 @@ header > nav > a {
     text-decoration: none;
     font-family: var(--fontauxiliar);
     margin: 20px;
-    margin-right: 0px;
+    margin-right: 2vw;
+}
+
+.logohome {
+    width: 220px; /* Aumente aqui conforme necessário */
+    height: auto; /* Mantém a proporção */
+    margin-left: 10vw;
+    width: 20%;
+    max-width: 300px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 a:hover {
@@ -84,13 +94,6 @@ header > nav > div {
     align-items: center;
 }
 
-header > nav > img {
-    margin-left: 5vw;
-    width: 20%;
-    height: auto;
-    max-width: 160px;
-    margin-right: auto;
-}
 
 header > nav > h1 {
     display: inline-block;
@@ -108,36 +111,32 @@ body {
 }
 .anuncio {
     flex: 0 0 auto;
-    margin: 10px;
-    width: 350px;
-    height: 350px;
+    width: 80vw;
+    height: 600px;
+    margin-bottom: 50px;
     background-color: var(--corauxiliarum);
-    border-radius: 20px;
     font-family: var(--fontauxiliar);
-    background-color: blueviolet;
+    background-color: rgb(226, 43, 43);
 }
 
-
-.paiprojeto {
-    padding-bottom: 20px;
+.paipaiprojeto {
     width: 100vw;
-    display: flex;
-    justify-content: center; /* Centraliza os itens no eixo principal (horizontal) */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-    background-color: var(--corprincipal);
+}
+.paiprojeto {
+  margin: 0 auto;
+  display: flex;
+  width: 80vw;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  justify-content: space-between;
+
 }
 
 .projeto {
-    flex: 0 0 auto;
-    padding: 20px;
-    margin: 10px;
-    width: 350px;
-    height: 350px;
-    background-color: var(--corauxiliarum);
-    border-radius: 20px;
-    font-family: var(--fontauxiliar);
-    line-height: 28px;
+    width: 580px;
+    height: 580px;
+    margin-bottom: 40px;
 }
+
 
 /* SINOPSE */
 
@@ -160,7 +159,6 @@ margin: 10px;
 width: 350px;
 height: 350px;
 background-color: var(--corauxiliarum);
-border-radius: 20px;
 font-family: var(--fontauxiliar);
 line-height: 28px;
 
@@ -189,7 +187,6 @@ line-height: 28px;
     font-size: 1.2em;
     margin-top: 10px;
     padding: 5px 20px;
-    border-radius: 25px;
     border: 2px solid var(--corsecundaria);
     transition: background-color 0.4s ease;
 }
@@ -201,7 +198,6 @@ line-height: 28px;
     font-size: 1.2em;
     margin-top: 10px;
     padding: 5px 20px;
-    border-radius: 25px;
     background-color: var(--corsecundaria);
 }
 
