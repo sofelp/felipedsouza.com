@@ -118,6 +118,15 @@ body {
     font-family: var(--fontauxiliar);
     background-color: rgb(226, 43, 43);
 }
+.portifolio {
+    color: var(--corsecundaria);
+    font-family: var(--fontauxiliar);
+    font-weight: 800;
+    font-size: 3em;
+    margin: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+}
 
 .paipaiprojeto {
     width: 100vw;
@@ -132,9 +141,9 @@ body {
 }
 
 .projeto {
-    width: 580px;
-    height: 580px;
-    margin-bottom: 40px;
+    width: 550px;
+    height: 550px;
+    margin-bottom: 60px;
 }
 
 
