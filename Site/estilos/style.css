@@ -111,14 +111,25 @@ body {
     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
     background-color: var(--corauxiliarum);
 }
+
+.tituloanuncio {
+    color: var(--corsecundaria);
+    font-size: 2.5em;
+}
+
+.textoanuncio {
+    color: var(--corsecundaria);
+    font-weight: 400;
+}
 .anuncio {
+    padding: 50px;
     flex: 0 0 auto;
     width: 80vw;
     height: 550px;
     margin-bottom: 100px;
     background-color: var(--corauxiliarum);
     font-family: var(--fontauxiliar);
-    background-color: rgb(226, 43, 43);
+    background-color: var(--corauxiliardois);
 }
 .portifolio {
     color: var(--corprincipal);
@@ -144,10 +155,66 @@ body {
 }
 
 .projeto {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
     width: 395px;
     height: 537px;
     margin-bottom: 20px;
 }
+
+/* Acordeon*/
+
+.acordeon {
+    margin-bottom: 100px;
+}
+
+.acordeon-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 80vw;;
+      margin: auto;
+    }
+
+    .acordeon-item {
+      background-color: #ffffffe0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .acordeon-header {
+      padding: 1.2rem;
+      background-color: #e6e6e6;
+      font-weight: bold;
+      font-family: var(--fontauxiliar);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .acordeon-body {
+      padding: 1rem 1.2rem;
+      display: none;
+      line-height: 1.6;
+      font-size: 0.95rem;
+      font-family: var(--fontauxiliar);
+    }
+
+    .acordeon-item.active .acordeon-body {
+      display: block;
+    }
+
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .acordeon-item.active .arrow {
+      transform: rotate(90deg);
+    }
+
+
 
 
 /* SINOPSE */
@@ -167,6 +234,7 @@ body {
   }
 
 .filhosinopse {
+box-shadow: 0 4px 10px rgba(0,0,0,0.06);
 flex: 0 0 auto;
 width: 550px;
 height: 700px;

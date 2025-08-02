@@ -32,7 +32,8 @@
     </header>
     <main>
         <section class="paianuncio">
-            <div class="anuncio">a</div>
+            <div class="anuncio"><h2 class="tituloanuncio">Seu serviço é único.<br> Sua marca também pode ser.<h3 class="textoanuncio"><br>Reposicionamento e identidade visual para profissionais que <br> querem se destacar com autenticidade e clareza.</h3></h2><div class="animacao"><iframe src="https://lottie.host/embed/493214a4-666c-4e74-9076-ee66d8da59dd/o1NNL9vudn.lottie"></iframe></div></div>
+            
         </section>
 
         <h2 class="portifolio">Portifólio</h2>
@@ -48,11 +49,49 @@
             </section>
         </section>
 
+        <!--Acordeon-->
+
+        <section class="acordeon">
+            <div class="acordeon-container">
+    <div class="acordeon-item">
+      <div class="acordeon-header">
+        O que fazemos
+        <span class="arrow">▶</span>
+      </div>
+      <div class="acordeon-body">
+        Estratégia de marca, design e posicionamento para negócios que querem se destacar e atrair com consistência.
+      </div>
+    </div>
+
+    <div class="acordeon-item">
+      <div class="acordeon-header">
+        Para quem é
+        <span class="arrow">▶</span>
+      </div>
+      <div class="acordeon-body">
+        Ideal para nutricionistas, especialistas e marcas pessoais que precisam elevar sua imagem sem perder essência.
+      </div>
+    </div>
+
+    <div class="acordeon-item">
+      <div class="acordeon-header">
+        O diferencial
+        <span class="arrow">▶</span>
+      </div>
+      <div class="acordeon-body">
+        Não criamos artes bonitas — criamos identidades que conversam com o seu público e valorizam seu serviço.
+      </div>
+    </div>
+  </div>
+        </section>
+
+        <!--Sinopse-->
+
         <section class="paipaisinopse">
             <section class="paisinopse"> <!--Biografia-->
                 <div class="filhosinopse">
-                    <h2>Transforme suas ideias em realidade com soluções criativas e inovadoras</h2>
-                    <p>Damos vida à sua marca com criatividade, destacando seu negócio e conectando-o ao público certo.
+                    <h2>Sua marca precisa valer o que você entrega.</h2>
+                    <p>A primeira impressão é a que vale, então vamos te posicionar onde estão os cleintes certos para seu negócio.
                     </p>
                 </div>
                 <div class="filhosinopse" id="fotominha"></div>
@@ -60,7 +99,7 @@
                     <h2>Precisa de
                     um projeto?</h2>
                     <p>
-                        Fale conosco, Estamos dispostos a entender sobre seu negócio e oferecer uma solução visual e eficiente.
+                        Fale conosco, vamos analisar juntos como você pode melhorar a comunicação entre o cliente e seu negócio.
                     </p><br>
                     <a href="#" id="falesinopse">Fale Comigo</a>
                 </div>
@@ -92,7 +131,16 @@
             </div>
         </section>
     </footer>
-    
+    <script>
+    const headers = document.querySelectorAll('.acordeon-header');
+
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.parentElement;
+        item.classList.toggle('active');
+      });
+    });
+  </script>
     
 </body>
 </html>
