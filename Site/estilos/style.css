@@ -19,6 +19,7 @@
     --corauxiliardois :  #e10613;
     --corauxiliartres :  #1d1d1d;
     --fontauxiliar: "manrope", sans-serif;
+    --fontprincipal: 'Clash Display', sans-serif;
 }
 
 /*portifolio*/
@@ -105,47 +106,71 @@ body {
     background-color: var(--corauxiliarum);
 }
 
-.tituloanuncio {
-    color: var(--corsecundaria);
-    font-size: 2.5em;
-}
-
-.textoanuncio {
-    color: var(--corsecundaria);
-    font-weight: 400;
-}
 
 .paipaianuncio {
     width: 100vw;
     display: flex;
-    justify-content: center; /* Centraliza os itens no eixo principal (horizontal) */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center;
     background-color: var(--corauxiliarum);
 }
 
 .paianuncio {
-    padding: 50px;
-    flex: 0 0 auto;
     width: 80vw;
-    height: 550px;
-    margin-bottom: 100px;
-    background-color: var(--corauxiliarum);
-    font-family: var(--fontauxiliar);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch; /* isso faz a animação ocupar toda a altura da div */
+    padding: 0; /* remove o espaçamento interno */
     background-color: var(--corauxiliardois);
+    overflow: hidden; /* evita vazamento se algo sair da div */
+    border-radius: 10px; /* se quiser um efeito visual mais limpo */
 }
+
 .anuncio {
+    flex: 1;
     padding: 50px;
-    flex: 0 0 auto;
-    height: 550px;
-    margin-bottom: 100px;
-    font-family: var(--fontauxiliar);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--corauxiliardois);
+    min-width: 300px;
+}
+
+.tituloanuncio {
+    font-size: 2.5rem;
+    font-family: var(--fontprincipal);
+    margin-bottom: 1rem;
+    color: var(--corsecundaria);
+    font-weight: 600;
+}
+
+.textoanuncio {
+    color: var(--corsecundaria);
+    font-size: 1.2rem;
+    font-family: var(--fontauxiliar);
+    line-height: 1.6;
 }
 
 .animacao {
-    width: 300px;
-    height: 200px;
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end; /* isso força o iframe pro canto direito */
+  padding: 0;
+  margin: 0;
 }
+
+.animacao iframe {
+  width: 100%;
+  max-width: 500px; /* aumente o valor conforme preferir */
+  height: 500px;     /* também pode aumentar mais se quiser mais impacto */
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  align-self: stretch; /* estica verticalmente para encostar no topo e base */
+}
+
 
 .portifolio {
     color: var(--corprincipal);
