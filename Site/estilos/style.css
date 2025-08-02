@@ -53,8 +53,8 @@
     justify-content: end;
 }
 header {
-    background-color: var(--corprincipal);
-    color: white;
+    background-color: var(--corauxiliarum);
+    color: rgb(0, 0, 0);
     margin-top: 10px;
 }
 
@@ -66,9 +66,11 @@ header > nav {
 }
 
 header > nav > a {
-    color: var(--corsecundaria);
+    color: var(--corprincipal);
     text-decoration: none;
     font-family: var(--fontauxiliar);
+    font-size: larger;
+    font-weight: bold;
     margin: 20px;
     margin-right: 2vw;
 }
@@ -85,7 +87,7 @@ header > nav > a {
 }
 
 a:hover {
-   border-bottom: 2px solid var(--corsecundaria);
+   border-bottom: 2px solid var(--corprincipal);
 }
 
 header > nav > div {
@@ -100,36 +102,37 @@ header > nav > h1 {
 }
 
 body {
-    background-color: var(--corprincipal);
+    background-color: var(--corauxiliarum);
 }
 .paianuncio {
     width: 100vw;
     display: flex;
     justify-content: center; /* Centraliza os itens no eixo principal (horizontal) */
     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-    background-color: var(--corprincipal);
+    background-color: var(--corauxiliarum);
 }
 .anuncio {
     flex: 0 0 auto;
     width: 80vw;
-    height: 600px;
-    margin-bottom: 50px;
+    height: 550px;
+    margin-bottom: 100px;
     background-color: var(--corauxiliarum);
     font-family: var(--fontauxiliar);
     background-color: rgb(226, 43, 43);
 }
 .portifolio {
-    color: var(--corsecundaria);
+    color: var(--corprincipal);
     font-family: var(--fontauxiliar);
     font-weight: 800;
     font-size: 3em;
     margin: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     text-align: center;
 }
 
 .paipaiprojeto {
     width: 100vw;
+    margin-bottom: 100px;
 }
 .paiprojeto {
   margin: 0 auto;
@@ -141,32 +144,34 @@ body {
 }
 
 .projeto {
-    width: 550px;
-    height: 550px;
-    margin-bottom: 60px;
+    width: 395px;
+    height: 537px;
+    margin-bottom: 20px;
 }
 
 
 /* SINOPSE */
-
-.paisinopse {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.paipaisinopse {
     width: 100vw;
+    background-color:var(--corauxiliarum);
+    margin-bottom: 100px;
+}
+.paisinopse {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 80vw;
     display: flex;
-    justify-content: center; /* Centraliza os itens no eixo principal (horizontal) */
+    justify-content: space-between; /*Deixa os intens no canto da tela */
     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-    background-color: var(--corsecundaria);
+    background-color: var(--corauxiliarum);
   }
 
 .filhosinopse {
-
 flex: 0 0 auto;
-padding: 20px;
-padding-right: 24px;
-margin: 10px;
-width: 350px;
-height: 350px;
+width: 550px;
+height: 700px;
+padding: 30px;
+margin-bottom: 30px;
 background-color: var(--corauxiliarum);
 font-family: var(--fontauxiliar);
 line-height: 28px;
