@@ -257,7 +257,7 @@ body {
 }
 
 .projeto:nth-child(6)::before {
-  background-image: url('../imagens/projeto/geovanna-hover.png');
+  background-image: url('../imagens/projeto/hover/giovanna_maquete.png');
 }
 
 
@@ -329,12 +329,14 @@ body {
     padding-bottom: 30px;
     width: 80vw;
     display: flex;
-    justify-content: space-between; /*Deixa os intens no canto da tela */
+    justify-content: center; /*Deixa os intens no canto da tela */
     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
     background-color: var(--corauxiliarum);
   }
 
 .filhosinopse {
+    margin: 20px;
+border-radius: 10px;
 box-shadow: 0 4px 10px rgba(0,0,0,0.06);
 flex: 0 0 auto;
 width: 550px;
@@ -345,6 +347,22 @@ background-color: var(--corauxiliarum);
 font-family: var(--fontauxiliar);
 line-height: 28px;
 
+}
+
+#frase h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+    color: var(--corsecundaria);
+}
+
+#frase p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: var(--corsecundaria);
+}
+
+#frase {
+    background-color: var(--corprincipal);
 }
 
 #fotominha {
@@ -363,6 +381,14 @@ line-height: 28px;
     color: var(--corsecundaria);
 }
 
+#precisaprojeto h2{
+    font-size: 2em;
+}
+
+#precisaprojeto p{
+    margin-top: 20px;
+    font-size: 1.2em;
+}
 
 #falesinopse {
     color: var(--corsecundaria);
@@ -372,6 +398,7 @@ line-height: 28px;
     padding: 5px 20px;
     border: 2px solid var(--corsecundaria);
     transition: background-color 0.4s ease;
+    border-radius: 20px;
 }
 
 #falesinopse:hover {
@@ -398,7 +425,8 @@ h2 {
 
 .pairodape {
     background-color: var(--corprincipal);
-    padding: 20px 0;
+    padding: 10px 0;
+    height: 15vh;
 }
 
 .filhorodape {
