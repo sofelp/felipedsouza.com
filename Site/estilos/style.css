@@ -180,27 +180,87 @@ body {
     margin: 50px;
     margin-bottom: 100px;
     text-align: center;
+    margin-top: 120px;
 }
 
 .paipaiprojeto {
-    width: 100vw;
-    margin-bottom: 100px;
+  width: 100vw;
+  margin-bottom: 100px;
 }
+
 .paiprojeto {
   margin: 0 auto;
   display: flex;
   width: 80vw;
-  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .projeto {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-    width: 395px;
-    height: 537px;
-    margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 395px;
+  height: 537px;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
 }
+
+/* Zoom leve ao passar o mouse */
+.projeto:hover {
+  transform: scale(1.03);
+}
+
+/* Imagem hover como camada sobreposta */
+.projeto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+/* Exibe imagem hover ao passar o mouse */
+.projeto:hover::before {
+  opacity: 1;
+}
+
+/* Imagens individuais para cada hover */
+.projeto:nth-child(1)::before {
+  background-image: url('../imagens/projeto/hover/odontofamily.png');
+}
+
+.projeto:nth-child(2)::before {
+  background-image: url('../imagens/projeto/hover/pamela_maquete.png');
+}
+
+.projeto:nth-child(3)::before {
+  background-image: url('../imagens/projeto/hover/jaqueline_maquete.png');
+}
+
+.projeto:nth-child(4)::before {
+  background-image: url('../imagens/projeto/hover/letsbuy_maquete.png');
+}
+
+.projeto:nth-child(5)::before {
+  background-image: url('../imagens/projeto/hover/sakura_maquete.png');
+}
+
+.projeto:nth-child(6)::before {
+  background-image: url('../imagens/projeto/geovanna-hover.png');
+}
+
+
 
 /* Acordeon*/
 
