@@ -111,7 +111,6 @@ body {
     width: 100vw;
     display: flex;
     justify-content: center;
-    background-color: var(--corauxiliarum);
 }
 
 .paianuncio {
@@ -121,7 +120,6 @@ body {
     justify-content: space-between;
     align-items: stretch; /* isso faz a animação ocupar toda a altura da div */
     padding: 0; /* remove o espaçamento interno */
-    background-color: var(--corauxiliardois);
     overflow: hidden; /* evita vazamento se algo sair da div */
     border-radius: 10px; /* se quiser um efeito visual mais limpo */
 }
@@ -132,7 +130,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--corauxiliardois);
     min-width: 300px;
 }
 
@@ -140,35 +137,43 @@ body {
     font-size: 2.5rem;
     font-family: var(--fontprincipal);
     margin-bottom: 1rem;
-    color: var(--corsecundaria);
+    color: var(--corprincipal);
     font-weight: 600;
 }
 
 .textoanuncio {
-    color: var(--corsecundaria);
+    color: var(--corprincipal);
     font-size: 1.2rem;
     font-family: var(--fontauxiliar);
     line-height: 1.6;
 }
 
-.animacao {
-  flex: 1;
-  display: flex;
-  align-items: stretch;
-  justify-content: flex-end; /* isso força o iframe pro canto direito */
-  padding: 0;
-  margin: 0;
-}
+/* processo */
 
-.animacao iframe {
-  width: 100%;
-  max-width: 500px; /* aumente o valor conforme preferir */
-  height: 500px;     /* também pode aumentar mais se quiser mais impacto */
-  border: none;
+.processo-criativo {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 60px 20px;
+  font-family: sans-serif;
+}
+.etapa {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.icone {
+  flex-shrink: 0;
+}
+.conteudo h3 {
   margin: 0;
-  padding: 0;
-  display: block;
-  align-self: stretch; /* estica verticalmente para encostar no topo e base */
+  font-size: 1.5rem;
+  color: var(--corprincipal);
+}
+.conteudo p {
+  margin: 5px 0;
+  line-height: 1.6;
+  color: var(--corprincipal);
 }
 
 
@@ -480,4 +485,3 @@ h2 {
     width: 220px; /* Aumente aqui conforme necessário */
     height: auto; /* Mantém a proporção */
 }
-
