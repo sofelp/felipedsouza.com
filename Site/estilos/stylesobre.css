@@ -252,7 +252,7 @@ body {
 /* ========== PROCESSO CRIATIVO ========== */
 
 .processo-criativo {
-    width: 80vw;;
+    width: 70vw;;
     margin: 80px auto;
     padding: 60px 20px;
     font-family: var(--fontauxiliar);
@@ -267,6 +267,10 @@ body {
 
 .icone {
     flex-shrink: 0;
+    width: 300px;
+    height: 400px;
+    background-color: #e10613;
+    border-radius: 20px;
 }
 
 .conteudo h3 {
