@@ -273,6 +273,31 @@ body {
     border-radius: 20px;
 }
 
+#icone-1 {
+  background-image: url('../imagens/sobre/1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#icone-2 {
+  background-image: url('../imagens/sobre/2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#icone-3 {
+  background-image: url('../imagens/sobre/3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#icone-4 {
+  background-image: url('img/icone4.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
 .conteudo h3 {
     margin: 0;
     font-size: 1.5rem;
