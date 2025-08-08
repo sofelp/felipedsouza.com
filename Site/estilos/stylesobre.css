@@ -164,6 +164,7 @@ body {
     width: 100vw;
     background-color: var(--corauxiliarum);
     margin-bottom: 100px;
+    margin-top: 200px;
 }
 
 .sobre .paisinopse {
@@ -181,7 +182,6 @@ body {
     flex: 0 0 auto;
     width: 550px;
     height: 700px;
-    padding: 30px;
     margin-bottom: 30px;
     font-family: var(--fontauxiliar);
     line-height: 28px;
@@ -204,9 +204,12 @@ body {
 }
 
 .biografia {
-  flex-wrap: wrap;
-  display: flex;
-  margin: 10vw;
+ margin: 0 auto;
+    padding-bottom: 30px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 #fotominha {
     background-size: cover;
